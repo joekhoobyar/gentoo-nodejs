@@ -10,10 +10,10 @@ EGIT_REPO_URI="git://github.com/ry/node.git"
 
 LICENSE="MIT LGPL"
 SLOT="0"
-KEYWORDS="-* ~x86 ~amd64"
-IUSE=""
+KEYWORDS="-*"
+IUSE="ssl"
 
-RDEPEND="crypt? ( dev-libs/openssl )
+RDEPEND="ssl? ( dev-libs/openssl )
 	>=sys-devel/gcc-4"
 DEPEND="${RDEPEND}"
 

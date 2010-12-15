@@ -15,7 +15,6 @@ IUSE="examples"
 S="${WORKDIR}/jashkenas-coffee-script-9db6d6f"
 LICENSE="MIT"
 
-
 DEPEND="dev-lang/nodejs"
 RDEPEND="${DEPEND}"
 
@@ -23,15 +22,14 @@ src_prepare() {
 	epatch "${FILESDIR}"/coffee-libraries.patch
 }
 
-
 src_install() {
 	dobin bin/cake
 	dobin bin/coffee
 	insinto /usr/$(get_libdir)/node/libraries/coffee-script
 	doins  lib/*
-	dodoc README LICENSE
+	dodoc README
 	if use examples; then
 		insinto "/usr/share/${PN}"
-		doins -r examples 
+		doins -r examples
 	fi
 }

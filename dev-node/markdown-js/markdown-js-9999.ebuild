@@ -14,7 +14,6 @@ KEYWORDS="-* ~x86 ~amd64"
 IUSE=""
 LICENSE="MIT"
 
-
 DEPEND="dev-lang/nodejs"
 RDEPEND="${DEPEND}"
 
