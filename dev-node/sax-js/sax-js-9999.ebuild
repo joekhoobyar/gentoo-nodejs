@@ -2,7 +2,9 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-inherit git
+EAPI=2
+
+inherit multilib git
 
 DESCRIPTION="A sax style parser for JS"
 HOMEPAGE="http://github.com/isaacs/sax-js"
@@ -17,11 +19,11 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/lib/node/libraries
-	doins lib/sax.js || die
-	dodoc README.md LICENSE || die
+	insinto /usr/$(get_libdir)/node/libraries
+	doins lib/sax.js
+	dodoc README.md LICENSE
 	if use examples; then
 		insinto "/usr/share/${PN}"
-		doins -r examples || die
+		doins -r examples
 	fi
 }

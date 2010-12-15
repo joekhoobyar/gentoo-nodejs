@@ -2,6 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
+inherit multilib
+
 DESCRIPTION="Server side templating language for JavaScript"
 HOMEPAGE="http://github.com/creationix/haml-js"
 SRC_URI="http://github.com/creationix/${PN}/tarball/v${PV} -> ${PN}-${PV}.tar.gz"
@@ -17,7 +19,7 @@ DEPEND="dev-lang/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/lib/node/libraries
-	doins lib/haml.js || die
-	dodoc README.markdown LICENSE || die
+	insinto /usr/$(get_libdir)/node/libraries
+	newins lib/haml.js haml-js.js
+	dodoc README.markdown LICENSE
 }

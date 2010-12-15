@@ -18,8 +18,7 @@ IUSE="examples"
 
 
 
-DEPEND="
-		dev-lang/nodejs
+DEPEND="dev-lang/nodejs
 		dev-node/sass
 		dev-node/less
 		dev-node/coffee-script
