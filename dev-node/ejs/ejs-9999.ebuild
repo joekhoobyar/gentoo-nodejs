@@ -27,7 +27,7 @@ src_compile() {
 }
 
 src_install() {
-	insinto /usr/$(get_libdir)/node/libraries
+	insinto /usr/$(get_libdir)/node
 	doins -r lib/ejs
 	dodoc Readme.md History.md
 }

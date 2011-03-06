@@ -20,7 +20,7 @@ DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/$(get_libdir)/node/libraries
+	insinto /usr/$(get_libdir)/node
 	doins -r lib/{koala.js,koala}
 	dodoc Readme.md History.md
 	if use examples; then

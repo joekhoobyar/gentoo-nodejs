@@ -16,7 +16,7 @@ DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/lib/node
+	insinto /usr/$(get_libdir)/node
 	doins lib/proto.js || die
 	dodoc README.markdown || die
 }

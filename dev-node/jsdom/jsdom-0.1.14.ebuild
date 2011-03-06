@@ -17,7 +17,7 @@ DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND} dev-node/node-htmlparser"
 
 src_install() {
-	insinto /usr/lib/node
+	insinto /usr/$(get_libdir)/node
 	doins -r lib/{jsdom.js,jsdom} || die
 	dodoc README.md LICENSE.txt || die
 	if use examples; then

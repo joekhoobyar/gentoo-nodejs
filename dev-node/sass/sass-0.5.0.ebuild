@@ -18,7 +18,7 @@ DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/$(get_libdir)/node/libraries
+	insinto /usr/$(get_libdir)/node
 	doins -r lib/sass.js
 	dodoc Readme.md History.md
 }

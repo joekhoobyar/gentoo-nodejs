@@ -34,10 +34,10 @@ src_compile() {
 }
 src_install() {
 	dodir /usr/share/man/man1
-	dodir /usr/$(get_libdir)/node/libraries
+	dodir /usr/$(get_libdir)/node
 	make \
 		PREFIX=${D}/usr \
-		LIB_PREFIX=${D}/usr/$(get_libdir)/node/libraries \
+		LIB_PREFIX=${D}/usr/$(get_libdir)/node \
 		install
 	dodoc README.md LICENSE History.md AUTHORS.markdown
 	if use examples; then
