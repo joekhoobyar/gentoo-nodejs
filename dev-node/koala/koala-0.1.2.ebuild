@@ -16,7 +16,7 @@ S="${WORKDIR}/visionmedia-koala.js-29c5609"
 LICENSE="MIT"
 
 
-DEPEND="dev-lang/nodejs"
+DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {

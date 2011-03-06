@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="-* ~x86 ~amd64"
 IUSE="examples"
 
-DEPEND="dev-lang/nodejs
+DEPEND="net-libs/nodejs
 		dev-node/coffee-script
 		dev-node/sass
 		dev-node/expresso

@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="-* ~x86 ~amd64"
 IUSE=""
 
-DEPEND="dev-lang/nodejs"
+DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_prepare() {

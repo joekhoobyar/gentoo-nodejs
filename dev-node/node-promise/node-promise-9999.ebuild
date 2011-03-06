@@ -12,7 +12,7 @@ KEYWORDS="-* ~x86 ~amd64"
 IUSE=""
 LICENSE="MIT"
 
-DEPEND="dev-lang/nodejs"
+DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {

@@ -15,7 +15,7 @@ LICENSE="MIT"
 
 EAPI=2
 
-DEPEND="dev-lang/nodejs"
+DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {

@@ -14,7 +14,7 @@ KEYWORDS="-* ~x86 ~amd64"
 IUSE="examples"
 LICENSE="MIT"
 
-DEPEND="dev-lang/nodejs
+DEPEND="net-libs/nodejs
 		!dev-node/haml-js"
 RDEPEND="${DEPEND}"
 

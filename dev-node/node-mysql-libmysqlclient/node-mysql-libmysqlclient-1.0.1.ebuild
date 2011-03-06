@@ -13,7 +13,7 @@ LICENSE="MIT"
 
 EAPI=2
 
-DEPEND="dev-lang/nodejs virtual/mysql"
+DEPEND="net-libs/nodejs virtual/mysql"
 RDEPEND="${DEPEND}"
 
 src_compile () {

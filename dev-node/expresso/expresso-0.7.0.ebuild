@@ -14,7 +14,7 @@ S="${WORKDIR}/visionmedia-expresso-da39f13"
 LICENSE="MIT"
 
 
-DEPEND="dev-lang/nodejs
+DEPEND="net-libs/nodejs
 		dev-node/node-jscoverage"
 RDEPEND="${DEPEND}"
 

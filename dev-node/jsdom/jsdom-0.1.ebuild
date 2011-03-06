@@ -13,7 +13,7 @@ LICENSE="MIT"
 
 EAPI=2
 
-DEPEND="dev-lang/nodejs"
+DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND} dev-node/node-htmlparser"
 
 src_install() {

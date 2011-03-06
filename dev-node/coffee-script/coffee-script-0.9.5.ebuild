@@ -15,7 +15,7 @@ IUSE="examples"
 S="${WORKDIR}/jashkenas-coffee-script-9db6d6f"
 LICENSE="MIT"
 
-DEPEND="dev-lang/nodejs"
+DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_prepare() {

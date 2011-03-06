@@ -12,7 +12,7 @@ S="${WORKDIR}/creationix-proto-afd66a2"
 
 EAPI=2
 
-DEPEND="dev-lang/nodejs"
+DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {

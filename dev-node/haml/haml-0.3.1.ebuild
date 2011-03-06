@@ -16,7 +16,7 @@ LICENSE="MIT"
 
 S="${WORKDIR}/visionmedia-haml.js-${PV}-0-g3574abe"
 
-DEPEND="dev-lang/nodejs
+DEPEND="net-libs/nodejs
 		!dev-node/haml-js"
 RDEPEND="${DEPEND}"
 

@@ -14,7 +14,7 @@ S="${WORKDIR}/visionmedia-sass.js-4dfd4c6"
 LICENSE="MIT"
 
 
-DEPEND="dev-lang/nodejs"
+DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {

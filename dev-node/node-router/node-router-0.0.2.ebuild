@@ -13,7 +13,7 @@ SLOT="0"
 KEYWORDS="-* ~x86 ~amd64"
 IUSE=""
 
-DEPEND="<=dev-lang/nodejs-0.1.33"
+DEPEND="<=net-libs/nodejs-0.1.33"
 RDEPEND="${RDEPEND}"
 
 S="${WORKDIR}/creationix-node-router-313b036/"
