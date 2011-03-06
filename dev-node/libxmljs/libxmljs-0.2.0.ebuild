@@ -17,11 +17,6 @@ DEPEND="${RDEPEND} dev-util/scons"
 
 S="${WORKDIR}/polotek-libxmljs-0be1b6f"
 
-src_compile () {
-	node-waf configure || die "Configure failed"
-	node-waf build || die "Compilation failed"
-}
-
 src_install() {
 	insinto /usr/$(get_libdir)/node
 	doins "${PN}.node" || die
