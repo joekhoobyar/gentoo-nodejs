@@ -35,7 +35,7 @@ src_compile() {
 
 src_install() {
 	emake DESTDIR="${D}" install || die
-	keepdir /usr/$(get_libdir)/node
+	keepdir /usr/lib/node
 	newenvd "${FILESDIR}/90nodejs-envd" "90nodejs"
 }
 

@@ -15,7 +15,7 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins lib/do.js || die
 	dodoc README.markdown LICENSE || die
 }

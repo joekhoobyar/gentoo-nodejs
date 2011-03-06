@@ -28,10 +28,10 @@ src_compile() {
 
 src_install() {
 	newbin bin/jade jade.js
-	insinto /usr/$(get_libdir)/node/jade
+	insinto /usr/lib/node/jade
 	doins -r \
 		lib/{compiler.js,doctypes.js,filters.js,jade.js,lexer.js,nodes,parser.js,self-closing.js,utils.js}
-	dosym jade.js /usr/$(get_libdir)/node/jade/index.js
+	dosym jade.js /usr/lib/node/jade/index.js
 	dodoc Readme.md History.md LICENSE api.html
 	if use examples; then
 		insinto "/usr/share/${PN}"

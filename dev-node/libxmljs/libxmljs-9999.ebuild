@@ -17,7 +17,7 @@ RDEPEND="dev-libs/libxml2"
 DEPEND="${RDEPEND} dev-util/scons"
 
 src_install() {
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins "${PN}.node" || die
 	dodoc README.md CHANGELOG LICENSE || die
 }

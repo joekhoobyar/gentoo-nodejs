@@ -18,7 +18,7 @@ DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins lib/markdown.js
 	dodoc README.markdown
 }

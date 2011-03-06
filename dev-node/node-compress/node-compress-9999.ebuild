@@ -27,7 +27,7 @@ src_compile () {
 }
 
 src_install() {
-	insinto "/usr/$(get_libdir)/node"
+	insinto "/usr/lib/node"
 	doins build/default/compress.node || die
 	dodoc README LICENSE || die
 }

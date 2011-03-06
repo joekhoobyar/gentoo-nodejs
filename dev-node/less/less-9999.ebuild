@@ -20,7 +20,7 @@ RDEPEND="${DEPEND}"
 
 src_install() {
 	dobin bin/lessc
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins -r lib/less
 	dodoc README.md
 	insinto "/usr/share/${PN}"

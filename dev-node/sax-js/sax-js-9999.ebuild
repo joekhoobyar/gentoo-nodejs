@@ -19,7 +19,7 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins lib/sax.js
 	dodoc README.md LICENSE
 	if use examples; then

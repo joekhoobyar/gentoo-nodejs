@@ -18,7 +18,7 @@ DEPEND="${RDEPEND} dev-util/scons"
 S="${WORKDIR}/polotek-libxmljs-0be1b6f"
 
 src_install() {
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins "${PN}.node" || die
 	dodoc README.md CHANGELOG LICENSE || die
 }

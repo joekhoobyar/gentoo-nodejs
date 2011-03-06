@@ -21,7 +21,7 @@ DEPEND="net-libs/nodejs
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins lib/haml.js
 	dodoc Readme.md History.md
 	if use examples; then

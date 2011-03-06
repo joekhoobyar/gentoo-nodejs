@@ -25,7 +25,7 @@ src_prepare() {
 src_install() {
 	dobin bin/cake
 	dobin bin/coffee
-	insinto /usr/$(get_libdir)/node/coffee-script
+	insinto /usr/lib/node/coffee-script
 	doins  lib/*
 	dodoc README
 	if use examples; then

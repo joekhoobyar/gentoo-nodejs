@@ -22,7 +22,7 @@ src_compile () {
 }
 
 src_install() {
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins "build/default/${PN}.node" || die
 	dodoc README.md || die
 }

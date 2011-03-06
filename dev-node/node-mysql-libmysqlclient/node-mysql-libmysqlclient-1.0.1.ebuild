@@ -22,7 +22,7 @@ src_compile () {
 }
 
 src_install() {
-	insinto /usr/$(get_libdir)/node
+	insinto /usr/lib/node
 	doins mysql_bindings.node || die
 	doins mysql-libmysqlclient.js || die
 	dodoc README.markdown LICENSE CHANGELOG.markdown doc/examples.js || die
