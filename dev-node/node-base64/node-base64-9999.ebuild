@@ -22,7 +22,7 @@ src_compile () {
 }
 
 src_install() {
-	insinto /usr/lib/node/libraries
+	insinto /usr/lib/node
 	doins "build/default/base64.node" || die
 	dodoc README.md || die
 }

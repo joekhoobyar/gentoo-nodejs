@@ -16,7 +16,7 @@ DEPEND="net-libs/nodejs"
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/lib/node/libraries
+	insinto /usr/lib/node
 	doins promise.js fs-promise.js || die
 	dodoc README.md test-promise.js || die
 }

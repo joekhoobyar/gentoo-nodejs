@@ -15,7 +15,7 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 src_install() {
-	insinto /usr/lib/node/libraries
+	insinto /usr/lib/node
 	doins node-htmlparser.js || die
 	dodoc README || die
 }

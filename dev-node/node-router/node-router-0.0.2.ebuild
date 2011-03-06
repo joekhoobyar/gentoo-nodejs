@@ -19,7 +19,7 @@ RDEPEND="${RDEPEND}"
 S="${WORKDIR}/creationix-node-router-313b036/"
 
 src_install() {
-	insinto /usr/lib/node/libraries
+	insinto /usr/lib/node
 	doins "lib/${PN}".js || die
 	dodoc README.markdown hello_world.js || die
 }
