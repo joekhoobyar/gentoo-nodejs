@@ -9,7 +9,7 @@ SRC_URI="http://github.com/polotek/libxmljs/tarball/${PV} -> ${PN}-${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="-* ~x86 ~amd64"
+KEYWORDS="-* x86 amd64"
 IUSE=""
 
 RDEPEND="net-libs/nodejs dev-libs/libxml2"
